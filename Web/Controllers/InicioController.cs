@@ -21,6 +21,7 @@ public class InicioController : Controller
 
     public IActionResult Formulario()
     {
+        ViewData["Test"] = "Gatitos";
         return View();
     }
 
