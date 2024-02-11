@@ -1,5 +1,8 @@
+@model Web.Models.Persona
+
+
 <form>
     <div class="alert alert-primary" role="alert">
-    Aqui va a haver lógica de negocios @(ViewData["Test"] ?? "No funco")
+    Aqui va a haver lógica de negocios @(Model.Nombre ?? "No funco")
    </div>
 </form>

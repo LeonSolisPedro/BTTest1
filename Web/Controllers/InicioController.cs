@@ -21,7 +21,13 @@ public class InicioController : Controller
 
     public IActionResult Formulario()
     {
-        ViewData["Test"] = "Gatitos";
+        var nose = new Persona { Nombre = "Pedro Leon", Edad = 5};
+        return View(nose);
+    }
+
+
+    public IActionResult Privacidad()
+    {
         return View();
     }
 
